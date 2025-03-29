@@ -1,10 +1,157 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dashboard</title>
-    </head>
-    <body>
-        <h1>Dashboard</h1>
-        <p>Bienvenido a tu dashboard</p>
-        <a href="index.html">Home</a>
-    </body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard con Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-purple-200 via-purple-300 to-purple-400 min-h-screen p-5 flex">
+    <!--contenedor principal-->
+    <div class="bg-white bg-opacity-20 backdrop-blur-md rounded-2xl shadow-xl border border-white border-opacity-20 w-full h-screen flex p-5">
+        
+        <!--contenedor izquierdo-->
+        <div class="bg-white bg-opacity-5 w-1/7 flex flex-col justify-betweet space-y-4">
+            <div class="flex items-center space-x-4 p-4">
+                <div class="flex items-center bg-black border rounded-2xl p-2">
+                    <a href="index.html">
+                    <img src="./Imagenes/pulsera.png" alt="Logo" class="w-10 h-10">
+                    </a>
+                </div>
+                <h2 class="text-black font-bold text-xl">edu</h2>
+            </div>
+            <nav class="space-y-4 pt-20">
+                <div class="relative group">
+                    <span class="absolute -top-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-br-3xl transition-all duration-300"></span>
+                    </span>
+                    <span class="absolute -bottom-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl transition-all duration-300"></span>
+                    </span>
+                    <a href="#" class="hover:bg-white rounded-l-3xl w-full block p-3 transition-all duration-300">
+                        Schedule
+                    </a>
+                </div>
+            
+                <div class="relative group">
+                    <span class="absolute -top-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-br-3xl transition-all duration-300"></span>
+                    </span>
+                    <span class="absolute -bottom-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl transition-all duration-300"></span>
+                    </span>
+                    <a href="#" class="hover:bg-white rounded-l-3xl w-full block p-3 transition-all duration-300">
+                        Progress
+                    </a>
+                </div>
+            
+                <div class="relative group">
+                    <span class="absolute -top-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-br-3xl transition-all duration-300"></span>
+                    </span>
+                    <span class="absolute -bottom-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl transition-all duration-300"></span>
+                    </span>
+                    <a href="#" class="hover:bg-white rounded-l-3xl w-full block p-3 transition-all duration-300">
+                        Messages
+                    </a>
+                </div>
+            
+                <div class="relative group">
+                    <span class="absolute -top-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-br-3xl transition-all duration-300"></span>
+                    </span>
+                    <span class="absolute -bottom-4 right-0 hidden h-4 w-4 bg-gray-50 group-hover:block">
+                        <span class="block h-4 w-4 bg-[#e4c9ff] rounded-tr-3xl transition-all duration-300"></span>
+                    </span>
+                    <a href="#" class="hover:bg-white rounded-l-3xl w-full block p-3 transition-all duration-300">
+                        Settings
+                    </a>
+                </div>
+            </nav>
+            
+            <br>
+            <br>
+            <p class="text-black text-opacity-80 pt-20">Log Out</p>
+        </div>
+        
+        <!--contenedor del centro-->
+        <div class="flex-1 flex flex-col space-y-4 p-5 rounded-l-2xl bg-white bg-opacity-80">
+            <input type="text" class="w-full p-3 border border-white border-opacity-20 rounded-xl bg-white bg-opacity-30 backdrop-blur-sm" placeholder="Search">
+            <div class="bg-black text-white p-6 rounded-xl text-center flex">
+                <div class="w-2/5 flex justify-center items-center">
+                    <img src="./Imagenes/pulsera.png" alt="Estudiante" class="w-40 h-40">
+                </div>
+        
+                <div class="w-3/5 flex flex-col justify-center">
+                    <h2 class="text-xl font-bold">Effective education!</h2>
+                    <p class="text-sm">Learning is easy and effective with us. Open the panel and watch your progress and growth in knowledge!</p>
+                </div>
+            </div>
+            
+            <h2 class="font-bold">Events</h2>
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-white p-4 rounded-xl shadow">
+                    <p class="text-black font-bold">26.02</p>
+                    <p class="text-opacity-20 text-gray text-xs">18:00 - 19:30</p>
+                    <p class="text-sm text-gray-600">UX/UI Workshop</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow">
+                    <p class="text-black font-bold">02.03</p>
+                    <p class="text-opacity-20 text-gray text-xs">18:00 - 19:30</p>
+                    <p class="text-sm text-gray-600">English Lecture</p>
+                </div>
+                <div class="bg-white p-4 rounded-xl shadow">
+                    <p class="text-black font-bold">07.03</p>
+                    <p class="text-opacity-20 text-gray text-xs">18:00 - 19:30</p>
+                    <p class="text-sm text-gray-600">Business Lecture</p>
+                </div>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="font-bold">Timing and Progress</h1>
+                <p class="text-right">more -></p>
+            </div>
+            <div class="h-auto w-full flex text-center gap-4 overflow-hidden">
+                <div class="w-1/2 rounded-2xl bg-white overflow-hidden">
+                    <img src="./Imagenes/grafica.png" alt="grafica" class="max-w-full h-auto object-contain">
+                </div>
+                <div class="w-1/2 rounded-2xl bg-white overflow-hidden"> 
+                    <img src="./Imagenes/porcentaje.png" alt="porcentajes" class="max-w-full h-auto object-contain">
+                </div>
+            </div>
+        </div>
+        
+        <!--contenedor derecho-->
+        <div class="bg-white bg-opacity-80 backdrop-blur-sm p-6 w-1/5 rounded-r-2xl border-white border-opacity-20 flex flex-col space-y-4">
+            <div class="flex justify-between items-center">
+                <img src="./Imagenes/campana.jpg" alt="Campana" class="w-10 h-10">
+                <h2 class="text-black font-bold text-xl">Karen G</h2>
+            </div>
+            <div class="flex justify-between items-center">
+                <h1 class="text-black text-opacity-80 font-bold">Your Courses</h1>
+                <h2 class="text-black">more -></h2>
+            </div>
+            <div class="flex justify-between items-center bg-white text-white p-4 rounded-3xl">
+                <div class="w-8 h-8 rounded-3xl bg-black"></div>
+                <p class="text-black text-xs text-opacity-80">Art - 35 hours  -><br>30hrs</p>
+            </div>
+            <div class="flex justify-between items-center bg-white text-white p-4 rounded-3xl">
+                <div class="w-8 h-8 rounded-3xl bg-black"></div>
+                <p class="text-black text-xs text-opacity-80">Business - 40 hours  -><br>40:00hrs</p>
+            </div>
+            <div class="flex justify-between items-center bg-white text-white p-4 rounded-3xl">
+                <div class="w-8 h-8 rounded-3xl bg-black"></div>
+                <p class="text-black text-xs text-opacity-80">Science - 25 hours -><br>25:00hrs</p>
+            </div>
+            <div class="flex justify-between items-center bg-white text-white p-4 rounded-3xl">
+                <div class="w-8 h-8 rounded-3xl bg-black"></div>
+                <p class="text-black text-xs text-opacity-80">Mathematics - 15 hours<br>15:00hrs</p>
+            </div>
+            <div class="bg-black text-white p-4 rounded-xl text-center">
+                <img class="w-20 h-20" src="./Imagenes/pulsera.png" alt="Estrella">
+                <p>Upgrade to Premium</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

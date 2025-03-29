@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <a href="index.html">Home</a>
-        <h1>Log in</h1>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
-            <label for="password">Password:</label><br>
-            <input type="password" id="password" name="password"><br><br>
-            <input type="submit" value="Log in">
-        </form>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login UI</title>
+    <link rel="stylesheet" href="Estilos/EstilosContenedores.css">
+</head>
+<body>
+    <div class="contenedor">
+        <!-- Panel izquierdo -->
+        <div id="panelI">
+            <a href="index.html">
+            <h2 id="h2I">Welcome to MDM</h2>
+        </a>
+            <hr id="hrI">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text.</p>
+            <button id="botonI">Know More</button>
+        </div>
+
+        <!-- Panel derecho -->
+        <div id="panelD">
+            <h2 id="h2D">Signin</h2>
+            <hr class="underline">
+            <form>
+                <input type="text" placeholder="Enter Username..." required>
+                <input type="password" placeholder="Enter Password..." required>
+                <button id="botonD">LOGIN</button>
+            </form>
+        </div>
+
+        <!-- Círculo con borde transparente en el centro -->
+        <div class="circulo-centro"></div>
+
+        <!-- Cuadrado con borde transparente, mitad fuera del panel derecho -->
+        <div class="cuadro-derecha"></div>
+    </div>
+</body>
 </html>
-
-
