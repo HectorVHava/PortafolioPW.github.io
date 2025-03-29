@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Configuración de Cuenta</title>
+    <script>
+        function resetForm() {
+            document.getElementById("configForm").reset();
+        }
+    </script>
+</head>
+<body>
+    <h1>AFTER</h1>
+    <img src="./Imagenes/play.png" width="50" height="50"><h2>Uploader</h2>
+    <nav>
+        <a href="#">Descubrir</a> |
+        <a href="#">Conectar</a> |
+        <a href="#">Comunidad</a> |
+        <a href="#">Trabajos</a> |
+        <a href="./index.html">Home</a>
+    </nav>
+    <img src="./Imagenes/sobre.png" width="50" height="50">
+    <img src="./Imagenes/nube.png" width="50" height="50">
+    <h2>Configuración de Cuenta</h2>
+    
+    <form id="configForm">
+        <h3>Información Básica</h3>
+        <p>Tener una dirección de correo electrónico actualizada</p>
+        <p>asociada a tu cuenta es un gran paso</p>
+        <p>para mantener tu cuenta segura.</p>
+        <label for="correo">Dirección de correo:</label><br> 
+        <input id="correo" type="email"><br>
+        <label for="password">Contraseña: </label> <br>
+        <button type="button">Cambiar tu contraseña</button><br>
+        <label for="pais">País: </label><br>
+        <select id="pais">
+            <option>México</option>
+        </select><br>
+        <label for="idioma">Idioma: </label><br>
+        <select id="idioma">
+            <option>Español</option>
+        </select><br>
+        
+        <h3>Perfil</h3>
+        <p>Esta información será visible públicamente, así que</p>
+        <p>ten cuidado con la información que proporcionas.</p>
+        <label for="nombre">Nombre: </label> <label for="apellido">Apellido: </label><br>
+        <input type="text" id="nombre"> <input type="text" id="apellido"><br>
+        <label for="foto">Foto: </label><br>
+        <button type="button">Cambiar foto</button><br>
+        <label for="username">Nombre de usuario: </label><br>
+        <input type="text" id="username"><br>
+        <label for="sobreti">Sobre ti: </label><br>
+        <textarea id="sobreti"></textarea><br>
+        
+        <h3>Facturación</h3>
+        <h4>Cambiar Plan</h4><br>
+        <label><input type="radio" name="plan" value="1GB"> Subidas de 1GB, $1</label><br>
+        <label><input type="radio" name="plan" value="5GB"> Subidas de 5GB, $5</label><br>
+        <label><input type="radio" name="plan" value="15GB"> Subidas de 15GB, $15</label><br>
+        <p>Método de pago: </p>
+        <p>Visa terminada en 1234 <button type="button">Actualizar</button></p>
+        
+        <h3>Notificaciones</h3>
+        <label><input type="checkbox"> Actividad de la Cuenta</label><br>
+        <label><input type="checkbox"> Nuevas Funcionalidades</label><br>
+        <label><input type="checkbox"> Noticias de la Empresa</label><br>
+        <label><input type="checkbox"> Actualización Semanal</label><br>
+        <br>
+        <br>
+        <button type="button" onclick="resetForm()">Cancelar</button>
+        <button type="submit">Guardar Configuración</button>
+    </form>
+</body>
+</html>
